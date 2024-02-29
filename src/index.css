@@ -1,0 +1,47 @@
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.bar {
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  transform: translate(0%) rotate(0deg);
+}
+
+/* base animation */
+.base,
+.spin {
+  transition: all 0.2s linear;
+}
+
+.base:first-child {
+  transform: translateY(150%) rotate(45deg);
+}
+
+.base:nth-child(even) {
+  opacity: 0;
+  transform: translateX(200%);
+}
+
+.base:last-child {
+  transform: translateY(-150%) rotate(-45deg);
+}
+
+/* spin animation */
+.spin:first-child {
+  transform: translateY(150%) rotate(405deg);
+}
+
+.spin:nth-child(even) {
+  opacity: 0;
+  transform: translateX(-200%) rotate(365deg);
+}
+
+.spin:last-child {
+  transform: translateY(-150%) rotate(495deg);
+}

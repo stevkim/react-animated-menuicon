@@ -1,0 +1,27 @@
+{
+  "name": "react-animated-menuicon",
+  "version": "1.0.0",
+  "description": "An animated hamburger menu icon in React",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepare": "npm run build"
+  },
+  "author": "stevkim",
+  "license": "MIT",
+  "files": ["dist", "LICENSE", "README.md"],
+  "keywords": ["react", "menu-icon", "animated-menu"],
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3"
+  }
+}
