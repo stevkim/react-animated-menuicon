@@ -1,3 +1,4 @@
+import React from "react";
 import "./index.css";
 import type { OptionProps } from "./useMenuIcon";
 
@@ -7,7 +8,7 @@ export interface MIconProps {
   options: OptionProps;
 }
 
-const MenuIcon = ({ open, toggleMenu, options }: MIconProps) => {
+const MenuIcon: React.FC<MIconProps> = ({ open, toggleMenu, options }) => {
   const { size, type, color } = options;
 
   return (

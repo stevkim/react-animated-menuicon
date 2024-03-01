@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-type TSizes = {
+export type TSizes = {
   [key: string]: string;
 };
 
@@ -12,22 +12,16 @@ const sizes: TSizes = {
 };
 
 export type OptionProps = {
-  size: string | undefined;
-  type: string | undefined;
-  color: string | undefined;
+  size?: string | undefined;
+  type?: string | undefined;
+  color?: string | undefined;
 };
-
-export interface Props {
-  size?: string;
-  type?: string;
-  color?: string;
-}
 
 const useMenuIcon = ({
   size = "2rem",
   type = "base",
   color = "#00000",
-}: Props) => {
+}: OptionProps) => {
   const [open, setOpen] = useState(false);
   const options = {
     size: sizes[size] || "2rem",
