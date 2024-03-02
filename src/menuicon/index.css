@@ -9,15 +9,16 @@
 .bar {
   width: 100%;
   height: 20%;
-  border-radius: 5px;
+  border-radius: 2px;
   transform: translate(0%) rotate(0deg);
 }
 
-/* base animation */
 .base,
 .spin {
   transition: all 0.2s linear;
 }
+
+/* base animation */
 
 .base:first-child {
   transform: translateY(150%) rotate(45deg);

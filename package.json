@@ -14,16 +14,8 @@
   },
   "author": "stevkim",
   "license": "MIT",
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "keywords": [
-    "react",
-    "menu-icon",
-    "animated-menu"
-  ],
+  "files": ["dist", "README.md"],
+  "keywords": ["react", "menu-icon", "animated-menu"],
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
