@@ -10,11 +10,6 @@
   width: 100%;
   height: 20%;
   border-radius: 2px;
-  transform: translate(0%) rotate(0deg);
-}
-
-.base,
-.spin {
   transition: all 0.2s linear;
 }
 

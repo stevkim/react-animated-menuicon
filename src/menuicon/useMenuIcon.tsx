@@ -5,10 +5,11 @@ export type TSizes = {
 };
 
 const sizes: TSizes = {
-  sm: ".5rem",
-  md: "1rem",
-  lg: "1.5rem",
-  xl: "2rem",
+  sm: "1rem",
+  md: "2rem",
+  lg: "2.5rem",
+  xl: "3rem",
+  custom: "1em",
 };
 
 export type OptionProps = {
@@ -18,7 +19,7 @@ export type OptionProps = {
 };
 
 const useMenuIcon = ({
-  size = "2rem",
+  size = "md",
   type = "base",
   color = "#00000",
 }: OptionProps) => {
