@@ -47,6 +47,14 @@ Component -
 
 ## Properties
 
+```
+  const { open, toggleMenu } = methods;
+```
+
+open returns the boolean value state of the menu icon // open === true || false
+
+toggleMenu is a function that lets you manually set the state of open // () => void
+
 <table>
   <tr>
     <th colspan=2>Available Sizes</th>
